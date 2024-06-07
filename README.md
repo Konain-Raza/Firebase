@@ -97,6 +97,19 @@ To use Firebase in your JavaScript project, you need to set up your Firebase con
 Create a file named `firebase-config.js` in your project directory and add the following code:
 
 ```javascript
+// Import Firebase SDK modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js";
+import { getFunctions } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-functions.js";
+import { getInstallations } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-installations.js";
+import { getMessaging } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js";
+import { getStorage } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js";
+import { getPerformance } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-performance.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js";
+import { getRemoteConfig } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-remote-config.js";
+
 // Firebase configuration
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
@@ -108,10 +121,24 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(firebaseConfig);
 
 // Export the Firebase app instance and configuration
-export { firebaseApp, firebaseConfig };
+export {
+  firebaseApp,
+  firebaseConfig,
+  getAnalytics,
+  getAuth,
+  getFirestore,
+  getFunctions,
+  getInstallations,
+  getMessaging,
+  getStorage,
+  getPerformance,
+  getDatabase,
+  getRemoteConfig
+};
+
 ```
 Replace `"YOUR_API_KEY"`, `"YOUR_AUTH_DOMAIN"`, `"YOUR_PROJECT_ID"`, `"YOUR_STORAGE_BUCKET"`, `"YOUR_MESSAGING_SENDER_ID"`, and `"YOUR_APP_ID"` with your actual Firebase project credentials.
 
