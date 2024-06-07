@@ -58,6 +58,20 @@ Firestore is a flexible, scalable database for mobile, web, and server developme
 - `docChanges`: Returns an array of the changes since the last snapshot.
 
 For detailed usage and code examples, refer to the [Firestore Documentation](https://firebase.google.com/docs/firestore).
+### Firebase Storage 🗄️
+
+Firebase Storage is a cloud storage service provided by Firebase that allows you to store and serve user-generated content, such as photos and videos, to your users. It offers secure and scalable storage solutions for mobile and web applications.
+
+#### Functions:
+
+- `uploadBytes`: Uploads data to the specified storage path.
+- `uploadFile`: Uploads a file to the specified storage path.
+- `trackUploadProgress`: Function to track the progress of an upload task.
+- `getDownloadURL`: Retrieves the download URL for a file in storage.
+- `deleteObject`: Deletes an object (file or folder) from storage.
+- `getMetadata`: Retrieves metadata for a file or folder in storage.
+- `updateMetadata`: Updates metadata for a file or folder in storage.
+
 
 ## Using Firebase in React
 
