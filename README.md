@@ -92,7 +92,14 @@ firebase.initializeApp(firebaseConfig);
 
 To use Firebase in your JavaScript project, you need to set up your Firebase configuration and initialize the Firebase app. Follow these steps to configure Firebase in your project:
 
-## Step 1: Create firebase-config.js
+## Step 1: Add Firebase SDK Script Tags
+
+To import the Firebase SDK modules into your project, you need to add script tags to your `index.html` file. 📦
+
+```html
+<script type="module" src="path/to/your/script.js"></script>
+```
+## Step 2: Create firebase-config.js
 
 Create a file named `firebase-config.js` in your project directory and add the following code:
 
@@ -142,7 +149,7 @@ export {
 ```
 Replace `"YOUR_API_KEY"`, `"YOUR_AUTH_DOMAIN"`, `"YOUR_PROJECT_ID"`, `"YOUR_STORAGE_BUCKET"`, `"YOUR_MESSAGING_SENDER_ID"`, and `"YOUR_APP_ID"` with your actual Firebase project credentials.
 
-## Step 2: Use `firebase-config.js` in Your JavaScript Code
+## Step 3: Use `firebase-config.js` in Your JavaScript Code
 
 In your JavaScript code (e.g., `script.js`), import the variables from `firebase-config.js` and use them as needed:
 
