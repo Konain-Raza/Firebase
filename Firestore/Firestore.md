@@ -194,7 +194,7 @@ const unsubscribe = onSnapshot(citiesRef, (querySnapshot) => {
 Returns an array of the changes since the last snapshot.
 
 ```javascript
-Copy code
+
 import { collection, onSnapshot } from "firebase/firestore"; 
 
 const citiesRef = collection(db, 'cities');
