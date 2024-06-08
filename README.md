@@ -119,17 +119,17 @@ Create a file named `firebase-config.js` in your project directory and add the f
 
 ```javascript
 // Import Firebase SDK modules
-import { initializeApp } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js";
-import { getFunctions } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-functions.js";
-import { getInstallations } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-installations.js";
-import { getMessaging } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js";
-import { getStorage } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js";
-import { getPerformance } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-performance.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js";
-import { getRemoteConfig } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-remote-config.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getFunctions } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
+import { getInstallations } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-installations.js";
+import { getMessaging } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
+import { getStorage } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js";
+import { getPerformance } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-performance.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getRemoteConfig } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-remote-config.js";
 
 // Firebase configuration
 const firebaseConfig = {
